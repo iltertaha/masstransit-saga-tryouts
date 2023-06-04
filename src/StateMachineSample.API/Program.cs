@@ -1,3 +1,5 @@
+using Hangfire;
+using Hangfire.MemoryStorage;
 using MassTransit;
 using StateMachineSample.API.Consumers;
 using StateMachineSample.API.Settings;
@@ -11,8 +13,19 @@ builder.Services.AddSwaggerGen();
 
 var messageBrokerQueueSettings = builder.Configuration.GetSection("MessageBroker:QueueSettings").Get<MessageBrokerQueueSettings>(); 
 
+
+builder.Services.AddHangfire(h =>
+{
+    h.UseRecommendedSerializerSettings();
+    h.UseMemoryStorage();
+});
+
 builder.Services.AddMassTransit(x =>
 {
+    Uri schedulerEndpoint = new Uri("queue:scheduler");
+    
+    x.AddMessageScheduler(schedulerEndpoint);
+    
     x.UsingRabbitMq((context,cfg) =>
     {
         cfg.Host(messageBrokerQueueSettings.HostName, messageBrokerQueueSettings.VirtualHost, h => {
@@ -20,6 +33,7 @@ builder.Services.AddMassTransit(x =>
             h.Password(messageBrokerQueueSettings.Password);
         });
 
+        cfg.UseMessageScheduler(schedulerEndpoint);
         cfg.ConfigureEndpoints(context);
     });
 

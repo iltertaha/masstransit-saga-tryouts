@@ -26,13 +26,14 @@ public class OrderStateMachine : MassTransitStateMachine<OrderState>
         During(Initial,
             When(OrderProcessInitializationEvent)
                 .Then(x => x.Saga.ExpirationTokenId = new Guid())
-                .Schedule(ExpirationSchedule, context => context.Init<TimeoutExpired>(new { context.Message.OrderId }))
-                .Then(x => x.Saga.OrderStartDate = DateTime.Now)
+                .Schedule(ExpirationSchedule, context => context.Init<TimeoutExpired>(new { context.Saga.ExpirationTokenId }))
+                .Then(_ => Console.WriteLine("scheduler started"))
+            .Then(x => x.Saga.OrderStartDate = DateTime.Now)
                 .TransitionTo(OrderProcessInitializedState));
         
         DuringAny(When(TimeoutExpired)
             .Then(_ => Console.WriteLine("timeout event fired"))
-            .Unschedule(ExpirationSchedule)
+            //.Unschedule(ExpirationSchedule)
             .TransitionTo(Cancelled));
         
         #endregion

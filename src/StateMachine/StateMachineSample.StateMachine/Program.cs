@@ -47,6 +47,8 @@ Host.CreateDefaultBuilder(args)
                 });
                 
                 cfg.UseMessageScheduler(schedulerEndpoint);
+                
+                
                 cfg.ConfigureEndpoints(context);
             });
         });
