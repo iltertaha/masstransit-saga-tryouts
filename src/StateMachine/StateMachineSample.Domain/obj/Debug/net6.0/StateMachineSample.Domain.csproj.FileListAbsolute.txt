@@ -1,0 +1,12 @@
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/bin/Debug/net6.0/StateMachineSample.Domain.deps.json
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/bin/Debug/net6.0/StateMachineSample.Domain.dll
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/bin/Debug/net6.0/StateMachineSample.Domain.pdb
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/StateMachineSample.Domain.csproj.AssemblyReference.cache
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/StateMachineSample.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/StateMachineSample.Domain.AssemblyInfoInputs.cache
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/StateMachineSample.Domain.AssemblyInfo.cs
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/StateMachineSample.Domain.csproj.CoreCompileInputs.cache
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/StateMachineSample.Domain.dll
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/refint/StateMachineSample.Domain.dll
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/StateMachineSample.Domain.pdb
+/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/Debug/net6.0/ref/StateMachineSample.Domain.dll

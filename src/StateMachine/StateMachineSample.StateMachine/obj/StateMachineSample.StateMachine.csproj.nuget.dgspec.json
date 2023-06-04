@@ -1,0 +1,143 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.StateMachine/StateMachineSample.StateMachine.csproj": {}
+  },
+  "projects": {
+    "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/StateMachineSample.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/StateMachineSample.Domain.csproj",
+        "projectName": "StateMachineSample.Domain",
+        "projectPath": "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/StateMachineSample.Domain.csproj",
+        "packagesPath": "/Users/iltertaha/.nuget/packages/",
+        "outputPath": "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/iltertaha/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "MassTransit.MongoDb": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "MassTransit.RabbitMQ": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.StateMachine/StateMachineSample.StateMachine.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.StateMachine/StateMachineSample.StateMachine.csproj",
+        "projectName": "StateMachineSample.StateMachine",
+        "projectPath": "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.StateMachine/StateMachineSample.StateMachine.csproj",
+        "packagesPath": "/Users/iltertaha/.nuget/packages/",
+        "outputPath": "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.StateMachine/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/Users/iltertaha/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "/usr/local/share/dotnet/library-packs": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/StateMachineSample.Domain.csproj": {
+                "projectPath": "/Users/iltertaha/Downloads/SagaStateMachine-Async-Messaging-master/src/StateMachine/StateMachineSample.Domain/StateMachineSample.Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Hangfire": {
+              "target": "Package",
+              "version": "[1.8.2, )"
+            },
+            "Hangfire.MemoryStorage": {
+              "target": "Package",
+              "version": "[1.7.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.401/RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
